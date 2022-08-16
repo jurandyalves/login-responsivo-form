@@ -80,6 +80,6 @@ form .conteudo-form .input-box{
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-..conteudo-form .input-box i{
+.conteudo-form .input-box i{
     position: absolute;
 }
