@@ -17,12 +17,24 @@ body{
 }
 
 .container{
+    position: relative;
     max-width: 850px;
     width: 100%;
     background: #fff;
     padding: 40px 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
 }
+
+.container .cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background: orange;
+    z-index: 98;
+}
+
 .container .form{
     height: 100%;
     width: 100%;
@@ -78,8 +90,57 @@ form .conteudo-form .input-box{
     font-size: 16px;
     font-weight: 500;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .conteudo-form .input-box i{
     position: absolute;
+    color: orange;
+    font-size: 17px;
+}
+
+.conteudo-form .input-box input:focus,
+.conteudo-form .input-box input:valid{
+    border-color: orange;
+}
+
+form .conteudo-form .texto{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+form .conteudo-form .texto a{
+    text-decoration: none;
+}
+
+form .conteudo-form .texto a:hover{
+    text-decoration: underline;
+}
+
+form .conteudo-form .button{
+    color: #fff;
+    margin: 40px;
+}
+
+form .conteudo-form .button input{
+    color: #fff;
+    background: orange;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+form .conteudo-form .button input:hover{
+    background: rgb(255, 190, 70);
+    color: #333;
+}
+
+form .conteudo-form .label a{
+    text-decoration: none;
+}
+
+form .conteudo-form .label a:hover{
+    text-decoration: underline;
 }
